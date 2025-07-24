@@ -13,7 +13,7 @@ const Dashboard = () => {
   const [editMode, setEditMode] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "" });
 
-  const apiurl = "https://construction-aqri.onrender.com/api/";
+  const apiurl = "https://buildcraft-vna1.onrender.com/api/";
   const userData = JSON.parse(localStorage.getItem("userInfo") || "{}");
   const token = userData.token || null;
   const fetchStats = async () => {

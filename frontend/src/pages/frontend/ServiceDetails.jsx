@@ -20,7 +20,7 @@ const ServiceDetails = () => {
   useEffect(() => {
     const fetchService = async () => {
       try {
-        const res = await fetch(apiurl2 + `services/${id}`);
+        const res = await fetch(apiurl + `services/${id}`);
         const result = await res.json();
 
         if (result.status) {
@@ -50,7 +50,7 @@ const ServiceDetails = () => {
     setSubmitting(true);
 
     try {
-      const res = await fetch(apiurl2 + "bookings", {
+      const res = await fetch(apiurl + "bookings", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

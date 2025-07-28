@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaSpinner, FaTrash, FaEye } from "react-icons/fa";
-import { apiurl2 } from "../../../components/frontend/Http";
+import { apiurl, apiurl2 } from "../../../components/frontend/Http";
 import Sidebar from "../../../components/backend/dashboard/Sidebar";
 import Swal from "sweetalert2";
 
@@ -17,7 +17,7 @@ const Bookings = () => {
 
   const fetchBookings = async () => {
     try {
-      const res = await fetch(apiurl2 + "bookings");
+      const res = await fetch(apiurl + "bookings");
       const data = await res.json();
       setBookings(data);
     } catch (err) {
@@ -39,7 +39,7 @@ const Bookings = () => {
 
     if (confirm.isConfirmed) {
       try {
-        await axios.delete(apiurl2 + "bookings/" + id);
+        await axios.delete(apiurl + "bookings/" + id);
         setBookings((prev) => prev.filter((b) => b.id !== id));
         Swal.fire("Deleted!", "Booking has been deleted.", "success");
       } catch (error) {

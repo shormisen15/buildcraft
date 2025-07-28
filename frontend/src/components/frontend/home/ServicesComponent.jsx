@@ -7,7 +7,7 @@ const ServicesComponent = () => {
 
   const fetchLatestServices = async () => {
     try {
-      const res = await fetch(apiurl2 + "get-latest-services?limit=4");
+      const res = await fetch(apiurl + "get-latest-services?limit=4");
       const result = await res.json();
 
       console.log("Full API response:", result);

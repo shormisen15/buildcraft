@@ -28,6 +28,8 @@ import EditBlogs from "./pages/backend/blogs/EditBlogs";
 import Teams from "./pages/backend/teams/Teams";
 import CreateTeam from "./pages/backend/teams/CreateTeam";
 import EditTeam from "./pages/backend/teams/EditTeam";
+import Bookings from "./pages/backend/bookings/Bookings";
+
 
 function App() {
   return (
@@ -156,6 +158,14 @@ function App() {
                   </RequireAuth>
                 }
               />
+              <Route
+                path="/admin/bookings"
+                element={
+                  <RequireAuth>
+                    <Bookings />
+                  </RequireAuth>
+                }
+              />
             </Routes>
           </main>
 
@@ -163,6 +173,20 @@ function App() {
         </div>
       </BrowserRouter>
       <ToastContainer position="top-center" />
+      <a
+        href="https://wa.me/8801772256889?text=Hello%2C%20I%20have%20a%20question%20about%20your%20services
+"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 bg-green-500 rounded-full p-3 shadow-lg z-50"
+        title="Chat on WhatsApp"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          className="w-8 h-8"
+        />
+      </a>
     </>
   );
 }

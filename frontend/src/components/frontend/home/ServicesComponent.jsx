@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { apiurl } from "../Http";
+import { apiurl, apiurl2 } from "../Http";
 
 const ServicesComponent = () => {
   const [services, setServices] = useState([]);
 
   const fetchLatestServices = async () => {
     try {
-      const res = await fetch(apiurl + "get-latest-services?limit=4");
+      const res = await fetch(apiurl2 + "get-latest-services?limit=4");
       const result = await res.json();
 
       console.log("Full API response:", result);

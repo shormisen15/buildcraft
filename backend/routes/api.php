@@ -73,3 +73,4 @@ Route::get('blogs/{id}', [FrontBlogController::class, 'show']);
 
 // Teams for frontend
 Route::get('get-teams', [FrontTeamController::class, 'index']);
+Route::apiResource('bookings', BookingController::class);

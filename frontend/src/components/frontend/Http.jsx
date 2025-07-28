@@ -1,5 +1,6 @@
-export const apiurl = "https://buildcraft-vna1.onrender.com/api/";
-export const fileurl = "https://buildcraft-vna1.onrender.com/";
+export const apiurl = "https://construction-aqri.onrender.com/api/";
+export const apiurl2 = "http://localhost:8000/api/";
+export const fileurl = "https://construction-aqri.onrender.com/";
 export const token = () => {
   const userInfo = localStorage.getItem("userInfo");
   const data = JSON.parse(userInfo);

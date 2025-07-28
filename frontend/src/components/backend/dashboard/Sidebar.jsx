@@ -12,6 +12,7 @@ const Sidebar = () => {
     { name: "Projects", path: "/admin/projects", icon: "📂" },
     { name: "Blogs", path: "/admin/blogs", icon: "📂" },
     { name: "Teams", path: "/admin/teams", icon: "👨‍👨" },
+    { name: "Bookings", path: "/admin/bookings", icon: "📂" },
   ];
 
   return (

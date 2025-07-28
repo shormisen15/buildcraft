@@ -84,7 +84,7 @@ const CreateServices = () => {
 
     try {
       const response = await axios.post(
-        "https://buildcraft-vna1.onrender.com/api/services",
+        "https://construction-aqri.onrender.com/api/services",
         submitData,
         {
           headers: {

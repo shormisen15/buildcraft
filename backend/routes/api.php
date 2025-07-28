@@ -12,6 +12,7 @@ use App\Http\Controllers\front\TeamController as FrontTeamController;
 use App\Http\Controllers\TempImageController;
 use App\Http\Controllers\admin\BlogController;
 use App\Http\Controllers\admin\TeamController;
+use App\Http\Controllers\BookingController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

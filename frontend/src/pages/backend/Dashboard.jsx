@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../../components/backend/dashboard/Sidebar";
 import { toast } from "react-toastify";
+import {apiurl} from '../../components/frontend/Http'
 
 const Dashboard = () => {
   const [stats, setStats] = useState({
@@ -13,7 +14,6 @@ const Dashboard = () => {
   const [editMode, setEditMode] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "" });
 
-  const apiurl = "https://construction-aqri.onrender.com/api/";
   const userData = JSON.parse(localStorage.getItem("userInfo") || "{}");
   const token = userData.token || null;
   const fetchStats = async () => {

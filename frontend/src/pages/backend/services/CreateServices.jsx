@@ -147,9 +147,9 @@ const CreateServices = () => {
                   ["title", "Title"],
                   ["slug", "Slug"],
                   ["short_desc", "Short Description"],
-                  ["price", "Price"],
-                  ["details", "Details"],
                   ["budget", "Budget"],
+                  ["price", "Offer Price"],
+                  ["details", "Details"],
                   ["timeline", "Timeline"],
                 ].map(([key, label]) => (
                   <div key={key}>

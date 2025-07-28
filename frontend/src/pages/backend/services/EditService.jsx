@@ -43,9 +43,9 @@ const EditService = () => {
           setValue("title", data.title);
           setValue("slug", data.slug);
           setValue("short_desc", data.short_desc);
+          setValue("budget", data.budget);
           setValue("price", data.price);
           setValue("details", data.details);
-          setValue("budget", data.budget);
           setValue("timeline", data.timeline);
           setValue("status", String(data.status));
 
@@ -214,17 +214,6 @@ const EditService = () => {
               />
             </div>
 
-            {/* Price */}
-            <div>
-              <label className="block font-medium mb-1">Price</label>
-              <input
-                {...register("price")}
-                type="number"
-                className="w-full border p-2 rounded border-gray-300"
-                placeholder="Price"
-              />
-            </div>
-
             {/* Details */}
             <div>
               <label className="block font-medium mb-1">Details</label>
@@ -244,6 +233,16 @@ const EditService = () => {
                 type="text"
                 className="w-full border p-2 rounded border-gray-300"
                 placeholder="Budget"
+              />
+            </div>
+             {/* Price */}
+            <div>
+              <label className="block font-medium mb-1">Offer Price</label>
+              <input
+                {...register("price")}
+                type="number"
+                className="w-full border p-2 rounded border-gray-300"
+                placeholder="Price"
               />
             </div>
 

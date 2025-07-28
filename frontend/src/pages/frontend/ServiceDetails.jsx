@@ -121,8 +121,12 @@ const ServiceDetails = () => {
             />
           </div>
           <div>
-            <h4 className="font-semibold text-gray-700">Price</h4>
-            <p className="text-gray-600">৳ {parseFloat(service.price).toLocaleString()}</p>
+            <h4 className="font-semibold text-gray-700">Offer Price</h4>
+            <p className="text-gray-600">$ {parseFloat(service.price).toLocaleString()}</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-gray-700">Budget</h4>
+            <p className="text-gray-600"> {service.budget.toLocaleString()}</p>
           </div>
           <div>
             <h4 className="font-semibold text-gray-700">Timeline</h4>

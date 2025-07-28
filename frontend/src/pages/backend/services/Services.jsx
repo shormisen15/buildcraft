@@ -193,11 +193,12 @@ const Services = () => {
               dangerouslySetInnerHTML={{ __html: selectedService.content }}
             />
             <p>
-              <strong>Price:</strong> {selectedService.price || "N/A"}
-            </p>
-            <p>
               <strong>Budget:</strong> {selectedService.budget || "N/A"}
             </p>
+            <p>
+              <strong>Offer Price:</strong> $ {selectedService.price || "N/A"}
+            </p>
+            
             <p>
               <strong>Timeline:</strong> {selectedService.timeline || "N/A"}
             </p>

@@ -7,7 +7,7 @@ const Team = () => {
   useEffect(() => {
     const fetchTeams = async () => {
       try {
-        const res = await fetch("https://construction-aqri.onrender.com/api/get-teams");
+        const res = await fetch(apiurl + "get-teams");
         const data = await res.json();
         if (data.status) {
           setTeamMembers(data.data);

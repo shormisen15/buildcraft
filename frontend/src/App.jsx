@@ -173,8 +173,11 @@ function App() {
         </div>
       </BrowserRouter>
       <ToastContainer position="top-center" />
+
+      {/* Whatsapp */}
       <a
-        href="https://wa.me/8801772256889?text=Hello%2C%20I%20have%20a%20question%20about%20your%20services
+        href="https://wa.me/8801772256889?
+        text=Hello%2C%20I%20have%20a%20question%20about%20your%20services
 "
         target="_blank"
         rel="noopener noreferrer"
